@@ -1,0 +1,12 @@
+.main{
+margin: 54px 0;
+}
+
+.main__heading{
+max-width: 436px;
+font-weight: 400;
+font-size: 50px;
+line-height: 61px;
+color: #000000;
+margin: auto;
+}
