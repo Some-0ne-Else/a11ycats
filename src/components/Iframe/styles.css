@@ -1,0 +1,17 @@
+.iframe{
+    max-width: 1184px;
+    margin: 125px auto 0;
+}
+
+.iframe__title{
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 61px;
+    color: #000;
+    max-width: 662px;
+    margin: 0 auto;
+}
+
+.iframe__wrapper{
+margin: 35px auto 0;
+}

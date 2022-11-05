@@ -14,10 +14,8 @@
 
 .combo {
   display: block;
-  margin-bottom: 1.5em;
   width: 280px;
   position: relative;
-
 }
 
 .combo::after {

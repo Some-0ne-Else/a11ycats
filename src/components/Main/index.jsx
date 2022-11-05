@@ -1,6 +1,8 @@
 import React from 'react';
 import Catalog from '../Catalog';
 import Select from '../Select';
+import Iframe from '../Iframe';
+import About from '../About';
 import './styles.css';
 
 export default function Main() {
@@ -11,15 +13,8 @@ export default function Main() {
         <Select />
       </div>
       <Catalog />
-      {/* <iframe
-        title="Introducing A11ycasts! -- A11ycasts #01 YouTube video"
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/HtTyRajRuyY"
-        frameBorder="0"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      /> */}
+      <Iframe />
+      <About />
     </main>
   );
 }
