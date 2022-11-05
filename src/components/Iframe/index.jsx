@@ -15,7 +15,6 @@ export default function Iframe() {
             src="https://www.youtube.com/embed/c6x-jIuEX6k"
             frameBorder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
           />
         </a>
       </div>

@@ -1,14 +1,16 @@
 import React from 'react';
 import CatalogCard from '../CatalogCard';
 import { catalogData } from '../Header/mocks';
+import { sortCards } from '../../helpers/common';
 
 import './styles.css';
 
-export default function Catalog() {
+export default function Catalog({ sortType }) {
+  const renderedCards = sortCards({ cards: catalogData, sortType });
   return (
     <section aria-labelledby="main-title">
       <ul className="catalog" aria-label="Товары">
-        {catalogData.map(({
+        {renderedCards.map(({
           id, img, title, price, oldPrice,
         }) => (
           <CatalogCard

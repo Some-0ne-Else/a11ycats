@@ -1,8 +1,9 @@
 /* eslint-disable */
 import React, { useEffect } from 'react';
+
 import './styles.css';
 
-export default function Select2() {
+export default function Select({ setSortType }) {
   useEffect(() => {
     // Save a list of named combobox actions, for future readability
     const SelectActions = {
@@ -316,6 +317,7 @@ export default function Select2() {
     Select.prototype.onOptionChange = function (index) {
     // update state
       this.activeIndex = index;
+      setSortType(index);
 
       // update aria-activedescendant
       this.comboEl.setAttribute('aria-activedescendant', `${this.idBase}-${index}`);

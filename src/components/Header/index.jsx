@@ -10,7 +10,7 @@ export default function Header() {
         <ul className="header__list">
           {navData.map((title) => (
             // eslint-disable-next-line jsx-a11y/anchor-is-valid
-            <li><a className="header__link" href="#">{title}</a></li>
+            <li key={title}><a className="header__link" href="#">{title}</a></li>
           ))}
         </ul>
       </nav>
