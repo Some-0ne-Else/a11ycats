@@ -1,0 +1,40 @@
+import React from 'react';
+import './styles.css';
+
+export default function CatalogCard({
+  id, img, title, price, oldPrice,
+}) {
+  const priceColor = oldPrice ? '#FF0000' : '#000';
+
+  const handleClick = () => {
+    console.log(`click on button ${title}`);
+  };
+
+  return (
+    <li className="catalog-card">
+      <img src={img} alt="" role="presentation" />
+      <div className="catalog-card__content">
+        <p className="catalog-card__title" id={`${id}-title`}>{title}</p>
+        <div className="catalog-card__price-wrapper">
+          <span className="visually-hidden">Цена:</span>
+          <span className="catalog-card__price" style={{ color: priceColor }}>{price}</span>
+          {oldPrice && (
+          <>
+            <span className="visually-hidden">Прежняя цена:</span>
+            <s className="catalog-card__old-price">{oldPrice}</s>
+          </>
+          )}
+        </div>
+        <button
+          className="catalog-card__button"
+          type="button"
+          onClick={handleClick}
+          id={`${id}-button`}
+          aria-labelledby={`${id}-title ${id}-button`}
+        >
+          Купить
+        </button>
+      </div>
+    </li>
+  );
+}

@@ -5,3 +5,41 @@ export const navData = [
   'Товары для черепах',
   'Товары для рыб',
 ];
+
+export const catalogData = [
+  {
+    id: 1,
+    img: '/catalog/cat.png',
+    title: 'Коврик для кота',
+    price: '100$',
+    oldPrice: '200$',
+  },
+  {
+    id: 2,
+    img: '/catalog/cat.png',
+    title: 'Наполнитель для кота',
+    price: '50$',
+    oldPrice: '150$',
+  },
+  {
+    id: 3,
+    img: '/catalog/cat.png',
+    title: 'Намордник для кота',
+    price: '100$',
+    oldPrice: '200$',
+  },
+  {
+    id: 4,
+    img: '/catalog/cat.png',
+    title: 'Одеяло для кота',
+    price: '100$',
+    oldPrice: null,
+  },
+  {
+    id: 5,
+    img: '/catalog/cat.png',
+    title: 'Подстилка для кота',
+    price: '100$',
+    oldPrice: null,
+  },
+];
