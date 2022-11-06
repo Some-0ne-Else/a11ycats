@@ -1,0 +1,21 @@
+.order-form{
+    display:flex;
+    flex-direction:column;
+    padding: 74px 90px;
+}
+
+.order-form__title{
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+    color: #000000;
+    margin: 0;
+}
+
+.order-form__subtitle{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+    margin: 6px 0 0;
+}

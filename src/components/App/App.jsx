@@ -1,8 +1,8 @@
 import React from 'react';
 
-import Header from './components/Header';
-import Main from './components/Main';
-import SkipLink from './components/SkipLink';
+import Header from '../Header';
+import Main from '../Main';
+import SkipLink from '../SkipLink';
 
 import './App.css';
 

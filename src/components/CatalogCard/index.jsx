@@ -1,28 +1,37 @@
 import React from 'react';
 import './styles.css';
 
-export default function CatalogCard({
-  id, img, title, price, oldPrice,
-}) {
+export default function CatalogCard({ card, setSelectedItem }) {
+  const {
+    id, img, title, price, oldPrice,
+  } = card;
   const priceColor = oldPrice ? '#FF0000' : '#000';
 
   const handleClick = () => {
-    console.log(`click on button ${title}`);
+    setSelectedItem(card);
   };
 
   return (
     <li className="catalog-card">
       <img src={img} alt="" role="presentation" />
       <div className="catalog-card__content">
-        <p className="catalog-card__title" id={`${id}-title`}>{title}</p>
+        <p className="catalog-card__title" id={`${id}-title`}>
+          {title}
+        </p>
         <div className="catalog-card__price-wrapper">
           <span className="visually-hidden">Цена:</span>
-          <span className="catalog-card__price" style={{ color: priceColor }}>{`${price}$`}</span>
+          <span
+            className="catalog-card__price"
+            style={{ color: priceColor }}
+          >
+            {`${price}$`}
+
+          </span>
           {oldPrice && (
-          <>
-            <span className="visually-hidden">Прежняя цена:</span>
-            <s className="catalog-card__old-price">{`${oldPrice}$`}</s>
-          </>
+            <>
+              <span className="visually-hidden">Прежняя цена:</span>
+              <s className="catalog-card__old-price">{`${oldPrice}$`}</s>
+            </>
           )}
         </div>
         <button
