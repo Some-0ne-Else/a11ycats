@@ -30,7 +30,10 @@
     height: 56px;
     cursor: pointer;
 }
-
+.about__button:focus{
+    border: 1px solid rgb(0, 68, 204);
+    box-shadow: rgb(102, 136, 221) 0px 0px 0px 3px;  
+}
 .about__button_active{
     background: #000000;
     color: #FFFFFF;

@@ -2,12 +2,12 @@
 max-width: 908px;
 margin: 40px auto;
 }
+
 .header__list {
 list-style: none;
 padding: 0;
 display: flex;
 column-gap: 20px;
-
 }
 
 .header__link{
@@ -16,4 +16,11 @@ text-decoration: none;
 font-weight: 400;
 font-size: 18px;
 line-height: 22px;
+outline:none;
+border-radius: 5px;
+}
+
+.header__link:focus{
+    border: 1px solid rgb(0, 68, 204);
+    box-shadow: rgb(102, 136, 221) 0px 0px 0px 3px;  
 }
