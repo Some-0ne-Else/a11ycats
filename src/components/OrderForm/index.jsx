@@ -23,6 +23,22 @@ export default function OrderForm({ selectedItem, onClose }) {
       <LabeledInput placeholder="Введите полный почтовый адрес с индексом" id="name" required type="textarea">
         Адрес доставки
       </LabeledInput>
+
+      <fieldset className="order-form__fieldset">
+        <legend className="order-form__legend">Способ оплаты</legend>
+        <div className="order-form__radio-wrapper">
+          <div>
+            <input className="order-form__radio-input" type="radio" id="card" name="pay" />
+            <label className="order-form__radio-label" htmlFor="card">Картой</label>
+          </div>
+          <div>
+            <input className="order-form__radio-input" id="cash" type="radio" name="pay" />
+            <label className="order-form__radio-label" htmlFor="cash">Наличными</label>
+          </div>
+        </div>
+      </fieldset>
+
+      <button className="order-form__button" type="submit">Отправить</button>
     </form>
   );
 }
