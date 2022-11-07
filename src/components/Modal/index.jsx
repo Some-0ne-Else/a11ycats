@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import ReactDOM from 'react-dom';
+import FocusTrap from 'focus-trap-react';
 
 import ModalOverlay from '../ModalOverlay';
 
@@ -31,20 +32,22 @@ export default function Modal({ onClose, children }) {
 
   return ReactDOM.createPortal(
     <>
-      <div className={styles.modal}>
-        <div className={`${styles.modal__container}`}>
-          <button
-            ref={buttonRef}
-            type="button"
-            onClick={onClose}
-            className={`${styles.modal__button}`}
-            aria-label="Закрыть модальное окно"
-          >
-            Х
-          </button>
-          {children}
+      <FocusTrap>
+        <div className={styles.modal}>
+          <div className={`${styles.modal__container}`}>
+            <button
+              ref={buttonRef}
+              type="button"
+              onClick={onClose}
+              className={`${styles.modal__button}`}
+              aria-label="Закрыть модальное окно"
+            >
+              Х
+            </button>
+            {children}
+          </div>
         </div>
-      </div>
+      </FocusTrap>
       <ModalOverlay onClose={onClose} />
     </>,
     modalRoot,
