@@ -1,6 +1,6 @@
 import React from 'react';
 import CatalogCard from '../CatalogCard';
-import { catalogData } from '../Header/mocks';
+import { catalogData } from '../../mocks';
 import { sortCards } from '../../helpers/common';
 
 import './styles.css';

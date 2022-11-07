@@ -9,7 +9,7 @@ export const navData = [
 export const catalogData = [
   {
     id: 1,
-    img: '/catalog/cat.png',
+    img: './catalog/cat.png',
     title: 'Коврик для кота',
     price: 100,
     oldPrice: 200,
@@ -17,7 +17,7 @@ export const catalogData = [
   },
   {
     id: 2,
-    img: '/catalog/cat.png',
+    img: './catalog/cat.png',
     title: 'Наполнитель для кота',
     price: 50,
     oldPrice: 150,
@@ -25,7 +25,7 @@ export const catalogData = [
   },
   {
     id: 3,
-    img: '/catalog/cat.png',
+    img: './catalog/cat.png',
     title: 'Намордник для кота',
     price: 100,
     oldPrice: 200,
@@ -33,7 +33,7 @@ export const catalogData = [
   },
   {
     id: 4,
-    img: '/catalog/cat.png',
+    img: './catalog/cat.png',
     title: 'Одеяло для кота',
     price: 200,
     oldPrice: null,
@@ -41,7 +41,7 @@ export const catalogData = [
   },
   {
     id: 5,
-    img: '/catalog/cat.png',
+    img: './catalog/cat.png',
     title: 'Подстилка для кота',
     price: 99,
     oldPrice: null,

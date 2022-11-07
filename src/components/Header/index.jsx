@@ -1,7 +1,7 @@
 import React from 'react';
 import './styles.css';
 
-import { navData } from './mocks/index';
+import { navData } from '../../mocks/index';
 
 export default function Header() {
   return (
