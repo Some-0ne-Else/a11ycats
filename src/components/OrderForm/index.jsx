@@ -6,7 +6,6 @@ export default function OrderForm({ selectedItem, onClose }) {
   const { title } = selectedItem;
   const onSubmit = (e) => {
     e.preventDefault();
-    console.log('submit');
     console.log(selectedItem);
     onClose();
   };
@@ -17,7 +16,7 @@ export default function OrderForm({ selectedItem, onClose }) {
       <LabeledInput placeholder="Введите имя и фамилию" id="name" required type="text">
         Имя и фамилия
       </LabeledInput>
-      <LabeledInput placeholder="gmail@gmail.com" id="name" required type="email">
+      <LabeledInput placeholder="Введите адрес электронной почты" id="name" required type="email">
         E-mail
       </LabeledInput>
       <LabeledInput placeholder="Введите полный почтовый адрес с индексом" id="name" required type="textarea">

@@ -6,6 +6,7 @@ import Iframe from '../Iframe';
 import About from '../About';
 import Modal from '../Modal';
 import OrderForm from '../OrderForm';
+import Footer from '../Footer';
 
 import './styles.css';
 
@@ -26,10 +27,11 @@ export default function Main() {
       <Catalog sortType={sortType} setSelectedItem={setSelectedItem} />
       <Iframe />
       <About />
+      <Footer />
       {selectedItem
       && (
       <Modal onClose={closeModal}>
-        <OrderForm selectedItem={selectedItem} />
+        <OrderForm selectedItem={selectedItem} onClose={closeModal} />
       </Modal>
       )}
     </main>

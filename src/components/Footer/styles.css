@@ -1,0 +1,88 @@
+.footer{
+    margin:163px auto 0;
+    max-width: 1184px;
+    display: flex;
+    justify-content: space-between;
+    padding: 69px 0;
+}
+
+.footer__social{
+    display:flex;
+    flex-direction: column;
+}
+
+.footer__social-title{
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    color: #000000;
+    margin:0;
+}
+
+.footer__social-wrapper{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 29px 0 0;
+    column-gap: 25px;
+}
+
+.footer__subscription-title{
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    color: #000000;
+    margin: 0;
+}
+.footer__subscription-input{
+    border:0;
+    border-bottom: 1px solid #000000;
+    height:38px;
+    width: 303px;
+    margin: 0;
+    padding: 0 0 10px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+}
+
+.footer__subscription-wrapper{
+    margin: 43px 0 0;
+}
+
+.footer__subscription-input:focus{
+    border: 1px solid rgb(0, 68, 204);
+    box-shadow: rgb(102, 136, 221) 0px 0px 0px 3px;
+    border-radius: 5px;
+}
+
+.footer__subscription-input::placeholder{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #A9A9A9;
+    font-family: 'Inter', 
+    sans-serif;
+}
+
+.footer__subscription-button{
+    background: #000000;
+    border-radius: 5px;
+    width: 329px;
+    height: 56px;
+    color: white;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    margin: 24px 0;
+    cursor: pointer;
+    outline: 'none';
+}
+.footer__subscription-button:focus{
+    border: 1px solid rgb(0, 68, 204);
+    box-shadow: rgb(102, 136, 221) 0px 0px 0px 3px;
+}
