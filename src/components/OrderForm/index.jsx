@@ -1,23 +1,31 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Button from '../ui/Button';
 import LabeledInput from '../ui/LabeledInput';
+import Status from '../ui/Status';
 import './styles.css';
 
-export default function OrderForm({ selectedItem, onClose }) {
+export default function OrderForm({ selectedItem, onClose, setIsSuccess }) {
   const { title } = selectedItem;
+  const [isSubmitting, setIsSumbitting] = useState(false);
+  const delay = 5000;
+
   const onSubmit = (e) => {
     e.preventDefault();
-    console.log(selectedItem);
-    onClose();
+    setIsSumbitting(true);
+    setTimeout(() => {
+      onClose();
+      setIsSumbitting(false);
+      setIsSuccess(true);
+    }, delay);
   };
   return (
     <form className="order-form" onSubmit={onSubmit}>
       <h3 className="order-form__title">{title}</h3>
       <p className="order-form__subtitle">Оформление заказа</p>
-      <LabeledInput placeholder="Введите имя и фамилию" id="name" required type="text">
+      <LabeledInput placeholder="Введите имя и фамилию" id="name" required type="text" autocomplete="on">
         Имя и фамилия
       </LabeledInput>
-      <LabeledInput placeholder="Введите адрес электронной почты" id="name" required type="email">
+      <LabeledInput placeholder="Введите адрес электронной почты" id="name" required type="email" autocomplete="on">
         E-mail
       </LabeledInput>
       <LabeledInput placeholder="Введите полный почтовый адрес с индексом" id="name" required type="textarea">
@@ -37,7 +45,8 @@ export default function OrderForm({ selectedItem, onClose }) {
           </div>
         </div>
       </fieldset>
-      <Button classValue="order-form__button" type="submit">Отправить</Button>
+      <Button disabled={isSubmitting} aria-busy={isSubmitting} classValue="order-form__button" type="submit">Отправить</Button>
+      <Status appereanceCondition={isSubmitting}>Заказ отправляется</Status>
     </form>
   );
 }

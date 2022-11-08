@@ -1,0 +1,7 @@
+.status {
+    display: none;
+}
+
+.status_visible{
+    display: block;
+}

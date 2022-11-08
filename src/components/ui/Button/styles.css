@@ -9,7 +9,13 @@
     cursor: pointer;
     outline: none;
 }
+
 .button:focus{
     border: 1px solid rgb(0, 68, 204);
     box-shadow: rgb(102, 136, 221) 0px 0px 0px 3px;
+}
+
+.button:disabled{
+    opacity: 0.5;
+    cursor: unset;
 }

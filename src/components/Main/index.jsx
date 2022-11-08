@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import Catalog from '../Catalog';
 import Select from '../Select';
@@ -9,10 +9,17 @@ import OrderForm from '../OrderForm';
 import Footer from '../Footer';
 
 import './styles.css';
+import Status from '../ui/Status';
 
 export default function Main() {
   const [sortType, setSortType] = useState(0);
   const [selectedItem, setSelectedItem] = useState(false);
+  const [isSuccess, setIsSuccess] = useState(false);
+  useEffect(() => {
+    if (isSuccess) {
+      setTimeout(() => { setIsSuccess(false); }, 500);
+    }
+  }, [isSuccess]);
 
   const closeModal = () => {
     setSelectedItem(false);
@@ -31,9 +38,10 @@ export default function Main() {
       {selectedItem
       && (
       <Modal onClose={closeModal}>
-        <OrderForm selectedItem={selectedItem} onClose={closeModal} />
+        <OrderForm selectedItem={selectedItem} onClose={closeModal} setIsSuccess={setIsSuccess} />
       </Modal>
       )}
+      <Status appereanceCondition={isSuccess}>Заказ успешно оформлен</Status>
     </main>
   );
 }
