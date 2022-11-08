@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from '../ui/Button';
 import LabeledInput from '../ui/LabeledInput';
 import './styles.css';
 
@@ -27,17 +28,16 @@ export default function OrderForm({ selectedItem, onClose }) {
         <legend className="order-form__legend">Способ оплаты</legend>
         <div className="order-form__radio-wrapper">
           <div>
-            <input className="order-form__radio-input" type="radio" id="card" name="pay" />
+            <input className="order-form__radio-input" required type="radio" id="card" name="pay" />
             <label className="order-form__radio-label" htmlFor="card">Картой</label>
           </div>
           <div>
-            <input className="order-form__radio-input" id="cash" type="radio" name="pay" />
+            <input className="order-form__radio-input" required id="cash" type="radio" name="pay" />
             <label className="order-form__radio-label" htmlFor="cash">Наличными</label>
           </div>
         </div>
       </fieldset>
-
-      <button className="order-form__button" type="submit">Отправить</button>
+      <Button classValue="order-form__button" type="submit">Отправить</Button>
     </form>
   );
 }

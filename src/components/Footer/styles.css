@@ -36,6 +36,15 @@
     color: #000000;
     margin: 0;
 }
+
+.footer__subscription-inner-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__subscription-checkbox-wrapper{
+    margin: 20px 0 0;
+}
 .footer__subscription-input{
     border:0;
     border-bottom: 1px solid #000000;
@@ -52,6 +61,8 @@
 
 .footer__subscription-wrapper{
     margin: 43px 0 0;
+    display: flex;
+    column-gap: 36px;
 }
 
 .footer__subscription-input:focus{
@@ -70,19 +81,5 @@
 }
 
 .footer__subscription-button{
-    background: #000000;
-    border-radius: 5px;
-    width: 329px;
-    height: 56px;
-    color: white;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 29px;
-    margin: 24px 0;
-    cursor: pointer;
-    outline: 'none';
-}
-.footer__subscription-button:focus{
-    border: 1px solid rgb(0, 68, 204);
-    box-shadow: rgb(102, 136, 221) 0px 0px 0px 3px;
+    width: 280px;
 }

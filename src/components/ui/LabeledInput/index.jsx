@@ -2,7 +2,7 @@ import React from 'react';
 import './styles.css';
 
 export default function LabeledInput({
-  children, placeholder, id, required = true,
+  children, placeholder, id, inputMode = 'text', required = true,
   type = 'text',
 }) {
   if (type === 'textarea') {
@@ -16,7 +16,7 @@ export default function LabeledInput({
   return (
     <label className="labeled-input__label" htmlFor={id}>
       {children}
-      <input className="labeled-input__input" required={required} id={id} type={type} placeholder={placeholder} />
+      <input className="labeled-input__input" required={required} id={id} type={type} inputMode={inputMode} placeholder={placeholder} />
     </label>
   );
 }

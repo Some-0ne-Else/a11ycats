@@ -53,8 +53,9 @@
     line-height: 29px;
     margin: 24px 0;
     cursor: pointer;
-    outline: 'none';
+    outline: none;
 }
+
 .catalog-card__button:focus{
     border: 1px solid rgb(0, 68, 204);
     box-shadow: rgb(102, 136, 221) 0px 0px 0px 3px;

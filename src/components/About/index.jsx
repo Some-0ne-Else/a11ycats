@@ -84,8 +84,8 @@ export default function About() {
   };
 
   return (
-    <section className="about" id="about">
-      <h2 className="about__title">Подробнее о товарах для котов</h2>
+    <section className="about" aria-labelledby="about">
+      <h2 className="about__title" id="about">Подробнее о товарах для котов</h2>
       <div className="about__tabs" role="tablist">
         <button
           className={`about__button ${

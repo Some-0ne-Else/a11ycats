@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from '../ui/Button';
 import './styles.css';
 
 export default function CatalogCard({ card, setSelectedItem }) {
@@ -34,15 +35,8 @@ export default function CatalogCard({ card, setSelectedItem }) {
             </>
           )}
         </div>
-        <button
-          className="catalog-card__button"
-          type="button"
-          onClick={handleClick}
-          id={`${id}-button`}
-          aria-labelledby={`${id}-title ${id}-button`}
-        >
-          Купить
-        </button>
+        <Button classValue="catalog-card__button" type="button" id={`${id}-button`} aria-labelledby={`${id}-title ${id}-button`} onClick={handleClick}>Купить</Button>
+
       </div>
     </li>
   );

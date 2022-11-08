@@ -81,20 +81,6 @@
   }
 
   .order-form__button{
-    background: #000000;
-    border-radius: 5px;
     width: 373px;
-    height: 56px;
-    color: white;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 29px;
-    margin: 24px 0;
-    cursor: pointer;
-    outline: 'none';
     margin: 56px 0 0;
-}
-.order-form__button:focus{
-    border: 1px solid rgb(0, 68, 204);
-    box-shadow: rgb(102, 136, 221) 0px 0px 0px 3px;
 }

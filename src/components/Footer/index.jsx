@@ -1,9 +1,11 @@
 import React from 'react';
-import './styles.css';
 
+import Button from '../ui/Button';
 import emailImage from './assets/email.svg';
 import telegramImage from './assets/telegram.svg';
 import facebookImage from './assets/facebook.svg';
+
+import './styles.css';
 
 export default function Footer() {
   const onSubmit = (e) => {
@@ -29,9 +31,13 @@ export default function Footer() {
             <label className="footer__subscription-label visually-hidden" htmlFor="email">
               Адрес электронной почты
             </label>
-            <input className="footer__subscription-input" required id="email" type="email" />
+            <input className="footer__subscription-input" inputMode="text" required id="email" type="email" />
+            <div className="footer__subscription-checkbox-wrapper">
+              <input type="checkbox" id="personal-data" required />
+              <label htmlFor="personal-data">Согласен на обработку персональных данных</label>
+            </div>
           </div>
-          <button className="footer__subscription-button" type="submit">Подписаться</button>
+          <Button classValue="footer__subscription-button" type="submit">Подписаться</Button>
         </div>
       </form>
     </footer>
