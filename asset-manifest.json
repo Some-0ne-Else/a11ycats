@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/a11ycats/static/css/main.67c723a2.css",
-    "main.js": "/a11ycats/static/js/main.5439a0b6.js",
+    "main.css": "/a11ycats/static/css/main.5c5bc812.css",
+    "main.js": "/a11ycats/static/js/main.d06457b2.js",
     "static/js/787.e1b28bb4.chunk.js": "/a11ycats/static/js/787.e1b28bb4.chunk.js",
     "static/media/telegram.svg": "/a11ycats/static/media/telegram.5021e0a46393dd5d236b8bf77db0bfc9.svg",
     "static/media/email.svg": "/a11ycats/static/media/email.7975c9de3f445f9f3fa6b25f90581da1.svg",
     "index.html": "/a11ycats/index.html",
     "static/media/facebook.svg": "/a11ycats/static/media/facebook.c83c8951f7f35b0c8c564322b64df9d8.svg",
-    "main.67c723a2.css.map": "/a11ycats/static/css/main.67c723a2.css.map",
-    "main.5439a0b6.js.map": "/a11ycats/static/js/main.5439a0b6.js.map",
+    "main.5c5bc812.css.map": "/a11ycats/static/css/main.5c5bc812.css.map",
+    "main.d06457b2.js.map": "/a11ycats/static/js/main.d06457b2.js.map",
     "787.e1b28bb4.chunk.js.map": "/a11ycats/static/js/787.e1b28bb4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.67c723a2.css",
-    "static/js/main.5439a0b6.js"
+    "static/css/main.5c5bc812.css",
+    "static/js/main.d06457b2.js"
   ]
 }
