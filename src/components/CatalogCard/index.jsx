@@ -36,7 +36,6 @@ export default function CatalogCard({ card, setSelectedItem }) {
           )}
         </div>
         <Button classValue="catalog-card__button" type="button" id={`${id}-button`} aria-labelledby={`${id}-title ${id}-button`} onClick={handleClick}>Купить</Button>
-
       </div>
     </li>
   );
