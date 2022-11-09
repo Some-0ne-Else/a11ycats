@@ -317,7 +317,6 @@ export default function Select({ setSortType }) {
     Select.prototype.onOptionChange = function (index) {
     // update state
       this.activeIndex = index;
-      setSortType(index);
 
       // update aria-activedescendant
       this.comboEl.setAttribute('aria-activedescendant', `${this.idBase}-${index}`);
@@ -356,7 +355,8 @@ export default function Select({ setSortType }) {
     Select.prototype.selectOption = function (index) {
     // update state
       this.activeIndex = index;
-
+      console.log('index', index);
+      setSortType(index);
       // update displayed value
       const selected = this.options[index];
       this.comboEl.innerHTML = selected;

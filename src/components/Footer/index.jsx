@@ -13,10 +13,10 @@ export default function Footer() {
     console.log('submit');
   };
   return (
-    <footer className="footer">
+    <footer className="footer" role="contentinfo">
       <div className="footer__social">
         <h3 className="footer__social-title">Социальные сети</h3>
-        <nav aria-label="Подписка на социальные сети">
+        <nav role="navigation" aria-label="Подписка на социальные сети">
           <ul className="footer__social-wrapper">
             <li className="footer__social-item"><a href="https://email.com" target="__blank" rel="noopener" aria-label="Электронная почта"><img src={emailImage} alt="" /></a></li>
             <li className="footer__social-item"><a href="https://telegram.org" target="__blank" rel="noopener" aria-label="Телеграм"><img src={telegramImage} alt="" /></a></li>
