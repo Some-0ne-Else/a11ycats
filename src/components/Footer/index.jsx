@@ -24,8 +24,8 @@ export default function Footer() {
           </ul>
         </nav>
       </div>
-      <form className="footer__subscription" onSubmit={onSubmit}>
-        <h3 className="footer__subscription-title">Подписка на новости</h3>
+      <form className="footer__subscription" aria-labelledby="subscription-title" onSubmit={onSubmit}>
+        <h3 className="footer__subscription-title" id="subscription-title">Подписка на новости</h3>
         <div className="footer__subscription-wrapper">
           <div className="footer__subscription-inner-wrapper">
             <label className="footer__subscription-label visually-hidden" htmlFor="email">
