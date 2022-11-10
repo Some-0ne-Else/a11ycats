@@ -41,7 +41,10 @@ export default function Main() {
         <OrderForm selectedItem={selectedItem} onClose={closeModal} setIsSuccess={setIsSuccess} />
       </Modal>
       )}
-      <Status appereanceCondition={isSuccess}>Заказ успешно оформлен</Status>
+      <Status appereanceCondition={isSuccess}>
+        Заказ успешно оформлен.
+        Модальное окно закрыто.
+      </Status>
     </main>
   );
 }

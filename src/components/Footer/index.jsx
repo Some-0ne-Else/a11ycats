@@ -18,9 +18,9 @@ export default function Footer() {
         <h3 className="footer__social-title">Социальные сети</h3>
         <nav role="navigation" aria-label="Подписка на социальные сети">
           <ul className="footer__social-wrapper">
-            <li className="footer__social-item"><a href="https://email.com" target="__blank" rel="noopener" aria-label="Электронная почта"><img src={emailImage} alt="" /></a></li>
-            <li className="footer__social-item"><a href="https://telegram.org" target="__blank" rel="noopener" aria-label="Телеграм"><img src={telegramImage} alt="" /></a></li>
-            <li className="footer__social-item"><a href="https://facebook.com" target="__blank" rel="noopener" aria-label="Фейсбук"><img src={facebookImage} alt="" /></a></li>
+            <li className="footer__social-item"><a className="footer__social-link" href="https://email.com" target="__blank" rel="noopener" aria-label="Электронная почта"><img src={emailImage} alt="" /></a></li>
+            <li className="footer__social-item"><a className="footer__social-link" href="https://telegram.org" target="__blank" rel="noopener" aria-label="Телеграм"><img src={telegramImage} alt="" /></a></li>
+            <li className="footer__social-item"><a className="footer__social-link" href="https://facebook.com" target="__blank" rel="noopener" aria-label="Фейсбук"><img src={facebookImage} alt="" /></a></li>
           </ul>
         </nav>
       </div>

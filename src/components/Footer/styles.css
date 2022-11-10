@@ -11,6 +11,19 @@
     flex-direction: column;
 }
 
+.footer__social-item {
+    outline: none;
+}
+
+.footer__social-link{
+    outline: none;
+}
+.footer__social-item:focus-within{
+    border-radius: 5px;
+    border: 1px solid rgb(0, 68, 204);
+    box-shadow: rgb(102, 136, 221) 0px 0px 0px 3px;   
+}
+
 .footer__social-title{
     font-family: 'Roboto';
     font-weight: 400;
