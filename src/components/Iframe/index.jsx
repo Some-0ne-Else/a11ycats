@@ -12,7 +12,7 @@ export default function Iframe() {
             title="50 вещей для кошек с aliexpress от которых ты офигеешь"
             width="1184"
             height="663"
-            src="https://www.youtube.com/embed/c6x-jIuEX6k"
+            src="https://www.youtube.com/embed/c6x-jIuEX6k/?iv_load_policy=1"
             frameBorder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
           />
