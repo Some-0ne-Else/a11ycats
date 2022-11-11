@@ -33,19 +33,28 @@ export default function Modal({ onClose, children }) {
   return ReactDOM.createPortal(
     <>
       <FocusTrap>
-        <div className={styles.modal}>
-          <div className={`${styles.modal__container}`}>
-            <button
-              ref={buttonRef}
-              type="button"
-              onClick={onClose}
-              className={`${styles.modal__button}`}
-              aria-label="Закрыть модальное окно"
-            >
-              Х
-            </button>
+        <div
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="form-name"
+          tabIndex="-1"
+          className={styles.modal}
+        >
+          <button
+            ref={buttonRef}
+            type="button"
+            onClick={onClose}
+            className={`${styles.modal__button}`}
+            aria-label="Закрыть модальное окно"
+          >
+            Х
+          </button>
+          <div
+            className={`${styles.modal__container}`}
+          >
             {children}
           </div>
+
         </div>
       </FocusTrap>
       <ModalOverlay onClose={onClose} />

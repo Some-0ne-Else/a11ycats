@@ -21,7 +21,7 @@ export default function OrderForm({ selectedItem, onClose, setIsSuccess }) {
   return (
     <form className="order-form" aria-labelledby="form-title" onSubmit={onSubmit}>
       <h3 className="order-form__title" id="form-title">{title}</h3>
-      <p className="order-form__subtitle">Оформление заказа</p>
+      <p className="order-form__subtitle" id="form-name">Оформление заказа</p>
       <LabeledInput placeholder="Введите имя и фамилию" id="name" required type="text" autocomplete="on">
         Имя и фамилия
       </LabeledInput>
