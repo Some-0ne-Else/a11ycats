@@ -13,7 +13,7 @@ export default function Footer() {
     console.log('submit');
   };
   return (
-    <footer className="footer" role="contentinfo">
+    <footer className="footer">
       <div className="footer__social">
         <h3 className="footer__social-title">Социальные сети</h3>
         <nav role="navigation" aria-label="Подписка на социальные сети">
